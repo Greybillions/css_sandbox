@@ -1,7 +1,7 @@
 ## CSS SANDBOX
 # CSS CheatSheet
 
-Welcome to **My CSS Cheat Sheet**!
+Welcome to **My CSS Cheat Sheet**! Thanks for stopping by.
 
 ## Table of Contents
 - [Installation](#installation)
