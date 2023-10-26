@@ -8,14 +8,69 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <!-- <meta name="robots" content="NOINDEX, NOFOLLOW"> --DO NOT INDEX WEBPAGE-->
     <title>CSS Positioning</title>
+
+  <style>
+    body{
+      height: 4000px;
+    }
+    .box{
+      width: 100px;
+      height: 100px;
+    }
+    .container{
+      position: relative;
+      background: #333;
+      width: 500px;
+      height: 500px;
+    }
+    #box-1{
+      position: relative;
+      z-index: 1;
+      top: 50px;
+      left: 50px;
+      background: red;
+    }
+    #box-2{
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      background: orange;
+    }
+    #box-3{
+      position: absolute;
+      bottom: 100px;
+      right: 100px;
+      background: yellow;
+    }
+    #box-4{
+      position: fixed;
+      background: green;
+      z-index: 3;
+    }
+    #box-5{
+      background: blue;
+      top: 0;
+      position: sticky;
+    }
+  </style>
   </head>
 
   <body>
     <div align="center">
       <h1>CSS Positioning</h1>
       <p>Implemetion Position in CSS</p>
-    </div> 
+    </div>
+
+<div class="box" id="box-1"></div>
+
+    <div class="container">
+      <div class="box" id="box-2"></div>
+      <div class="box" id="box-3"></div>
+    </div>
+
+<div id="box-4" class="box"></div>
+<div class="box" id="box-5"></div>
+
   </body>
 
 </html>
-
